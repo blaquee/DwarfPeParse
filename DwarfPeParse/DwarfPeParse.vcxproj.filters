@@ -13,21 +13,560 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\thirdparty">
+      <UniqueIdentifier>{d4f0c2ef-4b69-49a4-ab5f-9100f424a5a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\thirdparty\libdwarf">
+      <UniqueIdentifier>{cc3e1c33-1004-4868-8e01-aebe28f20036}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\thirdparty\libelf">
+      <UniqueIdentifier>{e44baefa-17e8-4464-8a85-b915619247ae}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\thirdparty\libdwarf\config.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
     </ClInclude>
-    <ClInclude Include="targetver.h">
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_abbrev.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_alloc.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_arange.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_base_types.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_die_deliv.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_elf_access.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_error.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_frame.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_funcs.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_gdbindex.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_global.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_harmless.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_incl.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_line.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_loc.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_macro.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_macro5.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_opaque.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_reloc_arm.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_reloc_mips.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_reloc_ppc.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_reloc_ppc64.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_reloc_x86_64.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_tsearch.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_types.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_util.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_vars.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_weaks.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_xu_index.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\libdwarf.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\libdwarfdefs.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\malloc_check.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\pro_alloc.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\pro_arange.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\pro_die.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\pro_encode_nm.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\pro_error.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\pro_expr.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\pro_frame.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\pro_incl.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\pro_line.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\pro_macinfo.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\pro_opaque.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\pro_reloc.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\pro_reloc_stream.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\pro_reloc_symbolic.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\pro_section.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\pro_types.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\pro_util.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libelf\byteswap.h">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libelf\config.h">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libelf\elf_repl.h">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libelf\errors.h">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libelf\ext_types.h">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libelf\gelf.h">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libelf\libelf.h">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libelf\nlist.h">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libelf\private.h">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libelf\sys_elf.h">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libelf\verdef.h">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libelf\verneed.h">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClInclude>
+    <ClInclude Include="dwarf_pe_helper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="DwarfPeParse.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_abbrev.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_alloc.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_arange.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_die_deliv.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_errmsg_list.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_error.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_form.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_frame.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_frame2.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_frame3.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_funcs.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_gdbindex.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_global.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_harmless.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_init_finish.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_leb.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_line.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_line2.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_loc.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_macro.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_macro5.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_original_elf_init.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_print_lines.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_pubtypes.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_query.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_ranges.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_sort_line.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_string.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_stubs.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_tied.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_tsearchhash.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_types.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_util.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_vars.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_weaks.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_xu_index.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\malloc_check.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_alloc.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_arange.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_die.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_encode_nm.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_error.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_expr.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_finish.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_forms.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_frame.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_funcs.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_init.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_line.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_macinfo.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_pubnames.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_reloc.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_reloc_stream.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_reloc_symbolic.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_section.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_types.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_vars.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\pro_weaks.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_elf_access.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\32.fsize.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\32.getehdr.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\32.getphdr.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\32.getshdr.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\32.newehdr.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\32.newphdr.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\32.xlatetof.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\64.xlatetof.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\assert.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\begin.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\checksum.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\cntl.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\cook.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\data.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\end.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\errmsg.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\errno.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\fill.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\flag.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\gelfehdr.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\gelfphdr.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\gelfshdr.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\gelftrans.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\getarhdr.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\getarsym.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\getbase.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\getdata.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\getident.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\getscn.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\hash.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\input.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\kind.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\memset.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\ndxscn.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\newdata.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\newscn.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\next.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\nextscn.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\nlist.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\opt.delscn.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\rand.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\rawdata.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\rawfile.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\strptr.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\swap64.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\update.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\verdef_32_tof.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\verdef_32_tom.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\verdef_64_tof.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\verdef_64_tom.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\version.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\x.elfext.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\x.movscn.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\libelf\x.remscn.c">
+      <Filter>Source Files\thirdparty\libelf</Filter>
+    </ClCompile>
+    <ClCompile Include="dwarf_pe_helper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\thirdparty\libdwarf\config.h.in">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </None>
   </ItemGroup>
 </Project>

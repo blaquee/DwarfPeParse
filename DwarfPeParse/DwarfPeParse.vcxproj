@@ -84,26 +84,39 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ExceptionHandling>SyncCThrow</ExceptionHandling>
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ExceptionHandling>SyncCThrow</ExceptionHandling>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -120,6 +133,10 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)thirdparty\libdwarf\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>SyncCThrow</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -127,6 +144,10 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -147,17 +168,190 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\config.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_abbrev.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_alloc.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_arange.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_base_types.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_die_deliv.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_elf_access.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_error.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_frame.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_funcs.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_gdbindex.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_global.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_harmless.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_incl.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_line.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_loc.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_macro.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_macro5.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_opaque.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_reloc_arm.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_reloc_mips.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_reloc_ppc.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_reloc_ppc64.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_reloc_x86_64.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_tsearch.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_types.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_util.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_vars.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_weaks.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_xu_index.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\libdwarf.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\libdwarfdefs.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\malloc_check.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\pro_alloc.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\pro_arange.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\pro_die.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\pro_encode_nm.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\pro_error.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\pro_expr.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\pro_frame.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\pro_incl.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\pro_line.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\pro_macinfo.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\pro_opaque.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\pro_reloc.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\pro_reloc_stream.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\pro_reloc_symbolic.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\pro_section.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\pro_types.h" />
+    <ClInclude Include="..\thirdparty\libdwarf\pro_util.h" />
+    <ClInclude Include="..\thirdparty\libelf\byteswap.h" />
+    <ClInclude Include="..\thirdparty\libelf\config.h" />
+    <ClInclude Include="..\thirdparty\libelf\elf_repl.h" />
+    <ClInclude Include="..\thirdparty\libelf\errors.h" />
+    <ClInclude Include="..\thirdparty\libelf\ext_types.h" />
+    <ClInclude Include="..\thirdparty\libelf\gelf.h" />
+    <ClInclude Include="..\thirdparty\libelf\libelf.h" />
+    <ClInclude Include="..\thirdparty\libelf\nlist.h" />
+    <ClInclude Include="..\thirdparty\libelf\private.h" />
+    <ClInclude Include="..\thirdparty\libelf\sys_elf.h" />
+    <ClInclude Include="..\thirdparty\libelf\verdef.h" />
+    <ClInclude Include="..\thirdparty\libelf\verneed.h" />
+    <ClInclude Include="dwarf_pe_helper.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_abbrev.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_alloc.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_arange.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_die_deliv.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_elf_access.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_errmsg_list.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_error.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_form.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_frame.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_frame2.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_frame3.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_funcs.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_gdbindex.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_global.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_harmless.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_init_finish.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_leb.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_line.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_line2.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_loc.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_macro.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_macro5.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_original_elf_init.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_print_lines.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_pubtypes.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_query.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_ranges.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_sort_line.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_string.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_stubs.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_tied.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_tsearchhash.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_types.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_util.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_vars.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_weaks.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_xu_index.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\malloc_check.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_alloc.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_arange.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_die.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_encode_nm.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_error.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_expr.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_finish.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_forms.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_frame.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_funcs.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_init.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_line.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_macinfo.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_pubnames.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_reloc.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_reloc_stream.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_reloc_symbolic.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_section.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_types.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_vars.c" />
+    <ClCompile Include="..\thirdparty\libdwarf\pro_weaks.c" />
+    <ClCompile Include="..\thirdparty\libelf\32.fsize.c" />
+    <ClCompile Include="..\thirdparty\libelf\32.getehdr.c" />
+    <ClCompile Include="..\thirdparty\libelf\32.getphdr.c" />
+    <ClCompile Include="..\thirdparty\libelf\32.getshdr.c" />
+    <ClCompile Include="..\thirdparty\libelf\32.newehdr.c" />
+    <ClCompile Include="..\thirdparty\libelf\32.newphdr.c" />
+    <ClCompile Include="..\thirdparty\libelf\32.xlatetof.c" />
+    <ClCompile Include="..\thirdparty\libelf\64.xlatetof.c" />
+    <ClCompile Include="..\thirdparty\libelf\assert.c" />
+    <ClCompile Include="..\thirdparty\libelf\begin.c" />
+    <ClCompile Include="..\thirdparty\libelf\checksum.c" />
+    <ClCompile Include="..\thirdparty\libelf\cntl.c" />
+    <ClCompile Include="..\thirdparty\libelf\cook.c" />
+    <ClCompile Include="..\thirdparty\libelf\data.c" />
+    <ClCompile Include="..\thirdparty\libelf\end.c" />
+    <ClCompile Include="..\thirdparty\libelf\errmsg.c" />
+    <ClCompile Include="..\thirdparty\libelf\errno.c" />
+    <ClCompile Include="..\thirdparty\libelf\fill.c" />
+    <ClCompile Include="..\thirdparty\libelf\flag.c" />
+    <ClCompile Include="..\thirdparty\libelf\gelfehdr.c" />
+    <ClCompile Include="..\thirdparty\libelf\gelfphdr.c" />
+    <ClCompile Include="..\thirdparty\libelf\gelfshdr.c" />
+    <ClCompile Include="..\thirdparty\libelf\gelftrans.c" />
+    <ClCompile Include="..\thirdparty\libelf\getarhdr.c" />
+    <ClCompile Include="..\thirdparty\libelf\getarsym.c" />
+    <ClCompile Include="..\thirdparty\libelf\getbase.c" />
+    <ClCompile Include="..\thirdparty\libelf\getdata.c" />
+    <ClCompile Include="..\thirdparty\libelf\getident.c" />
+    <ClCompile Include="..\thirdparty\libelf\getscn.c" />
+    <ClCompile Include="..\thirdparty\libelf\hash.c" />
+    <ClCompile Include="..\thirdparty\libelf\input.c" />
+    <ClCompile Include="..\thirdparty\libelf\kind.c" />
+    <ClCompile Include="..\thirdparty\libelf\memset.c" />
+    <ClCompile Include="..\thirdparty\libelf\ndxscn.c" />
+    <ClCompile Include="..\thirdparty\libelf\newdata.c" />
+    <ClCompile Include="..\thirdparty\libelf\newscn.c" />
+    <ClCompile Include="..\thirdparty\libelf\next.c" />
+    <ClCompile Include="..\thirdparty\libelf\nextscn.c" />
+    <ClCompile Include="..\thirdparty\libelf\nlist.c" />
+    <ClCompile Include="..\thirdparty\libelf\opt.delscn.c" />
+    <ClCompile Include="..\thirdparty\libelf\rand.c" />
+    <ClCompile Include="..\thirdparty\libelf\rawdata.c" />
+    <ClCompile Include="..\thirdparty\libelf\rawfile.c" />
+    <ClCompile Include="..\thirdparty\libelf\strptr.c" />
+    <ClCompile Include="..\thirdparty\libelf\swap64.c" />
+    <ClCompile Include="..\thirdparty\libelf\update.c" />
+    <ClCompile Include="..\thirdparty\libelf\verdef_32_tof.c" />
+    <ClCompile Include="..\thirdparty\libelf\verdef_32_tom.c" />
+    <ClCompile Include="..\thirdparty\libelf\verdef_64_tof.c" />
+    <ClCompile Include="..\thirdparty\libelf\verdef_64_tom.c" />
+    <ClCompile Include="..\thirdparty\libelf\version.c" />
+    <ClCompile Include="..\thirdparty\libelf\x.elfext.c" />
+    <ClCompile Include="..\thirdparty\libelf\x.movscn.c" />
+    <ClCompile Include="..\thirdparty\libelf\x.remscn.c" />
     <ClCompile Include="DwarfPeParse.cpp" />
-    <ClCompile Include="stdafx.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-    </ClCompile>
+    <ClCompile Include="dwarf_pe_helper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\thirdparty\libdwarf\config.h.in" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
