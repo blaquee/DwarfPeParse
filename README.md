@@ -11,3 +11,9 @@ This is a Work in Progress base for a library that supports processing Dwarf Sym
 
 DwarfGenNames doesn't need to be ran since these files are already included in the DwarfPeParse project. Run it only if an update to the dwarf.h header file occurs.
 
+This project actually uses the libdwarf revised in 2015, but changelog files show 2008 (the files are copied from the drmingw project)
+
+
+Thanks to some of the work from these projects:
+* https://github.com/WolfgangSt/libdwarf
+* https://github.com/jrfonseca/drmingw
