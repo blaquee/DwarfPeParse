@@ -9,10 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="Source Files\thirdparty">
       <UniqueIdentifier>{d4f0c2ef-4b69-49a4-ab5f-9100f424a5a3}</UniqueIdentifier>
     </Filter>
@@ -21,6 +17,10 @@
     </Filter>
     <Filter Include="Source Files\thirdparty\libelf">
       <UniqueIdentifier>{e44baefa-17e8-4464-8a85-b915619247ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -213,7 +213,16 @@
     <ClInclude Include="..\thirdparty\libelf\verneed.h">
       <Filter>Source Files\thirdparty\libelf</Filter>
     </ClInclude>
-    <ClInclude Include="dwarf_pe_helper.h">
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_names.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_names_enum.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\libdwarf\dwarf_names_new.h">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -560,8 +569,8 @@
     <ClCompile Include="..\thirdparty\libelf\x.remscn.c">
       <Filter>Source Files\thirdparty\libelf</Filter>
     </ClCompile>
-    <ClCompile Include="dwarf_pe_helper.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\thirdparty\libdwarf\dwarf_names.c">
+      <Filter>Source Files\thirdparty\libdwarf</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
