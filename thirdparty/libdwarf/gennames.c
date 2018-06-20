@@ -94,7 +94,7 @@ static void ParseDefinitionsAndWriteOutput();
 /* We don't need really long lines: the input file is simple. */
 #define MAX_LINE_SIZE 1000
 /* We don't need a variable array size, it just has to be big enough. */
-#define ARRAY_SIZE 256
+#define ARRAY_SIZE 512
 
 /* To store entries from dwarf.h */
 typedef struct {
@@ -515,7 +515,7 @@ ParseDefinitionsAndWriteOutput()
 
         /* Be sure we have a valid entry */
         if (array_count >= ARRAY_SIZE) {
-            printf("Too many entries for current group_array size");
+            printf("Too many entries for current group_array size. Array Count = %d, Array Size= %d\n", array_count, ARRAY_SIZE);
             exit(1);
         }
 
